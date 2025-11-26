@@ -1,0 +1,39 @@
+{
+    "name": "parcel-starter-pack",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "clean": "rimraf dist .parcel-cache .cache",
+        "start": "parcel serve ./src/pages/*.html ./src/pages/**/*.html --open ",
+        "build": "parcel build ./src/pages/*.html ./src/pages/**/*.html ",
+        "prepare": "husky install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@parcel/transformer-css": "^2.16.1",
+        "@parcel/transformer-sass": "^2.16.1",
+        "autoprefixer": "^9.8.8",
+        "parcel": "^2.16.1",
+        "parcel-plugin-custom-dist-structure": "^1.1.20",
+        "postcss": "^7.0.39",
+        "prettier": "^3.6.2",
+        "rimraf": "^6.1.2"
+    },
+    "dependencies": {
+        "parcel-plugin-handlebars-precompile": "^1.0.2"
+    },
+    "customDistStructure": {
+        "config": {
+            ".css": "css",
+            ".js": "js",
+            "images": [
+                ".jpg",
+                ".svg",
+                ".png"
+            ]
+        }
+    }
+}
