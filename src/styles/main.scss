@@ -3,19 +3,3 @@
 @use 'variables';
 @import '../styles/normalize-me.css';
 @import '../styles/fonts.css';
-
-body {
-    ::placeholder {
-        color: gray;
-    }
-
-    .image {
-        width: stretch;
-    }
-}
-$primary-color: #3bbfce;
-$secondary-color: #ff8700;
-.content {
-    background-color: $primary-color;
-    color: darken($secondary-color, 9%);
-}
