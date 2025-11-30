@@ -1,2 +1,3 @@
 # parcel-starter-pack
-Стартер пак для parcel
+Parcel starter pack for multi-page development
+
